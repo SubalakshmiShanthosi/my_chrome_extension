@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "My Chrome Extension",
+    "version": "1.0.1",
+    "icons": {
+        "32": "coding_challenges.png"
+    },
+    "background": {
+        "scripts": ["service_worker.js"],
+        "persistent": false
+    },
+    "browser_action": {
+         "title": "Your Browser Action Name"
+    }
+
+
+}
