@@ -1,17 +1,15 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "My Chrome Extension",
     "version": "1.0.1",
     "icons": {
         "32": "coding_challenges.png"
     },
-    "background": {
-        "scripts": ["service_worker.js"],
-        "persistent": false
-    },
-    "browser_action": {
-         "title": "Your Browser Action Name"
-    }
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+      },
+    "permissions": ["storage"]
+
 
 
 }
