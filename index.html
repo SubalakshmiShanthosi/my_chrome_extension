@@ -7,8 +7,10 @@
   <meta http-equiv="refresh" content="15">
   <title>My Chrome Extension</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="weather_style.css">
   <link href="https://fonts.cdnfonts.com/css/midpoint-pro" rel="stylesheet">
   <script src="popup.js"></script>
+  <script src="fetchWeather.js"></script>
 </head>
 
 <body>
@@ -17,7 +19,15 @@
       <div id="clock" style="font-size: 2em;"></div>
       <div id="time" style="display: inline;"></div>
     </div>
-
+    <div class="repeat-x">
+      <p class="description__text"></p>
+      <p class="temperature-humidity__temperature-text">
+                    
+      </p>
+      <p class="temperature-humidity__humidity-text">
+          
+      </p>   
+    </div>
 
     <div class="repeat-x">
       <h1>CODING CHALLENGES>_</h1>
