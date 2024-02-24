@@ -1,6 +1,7 @@
 const API_KEY = "" // visit openWeather to get your own API key 
+setTimeout(setWeather, 1000);
 
-window.onload = function () {
+ function setWeather() {
 
     let geo;
     let geoSuccess = function (position){
