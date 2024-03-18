@@ -20,3 +20,11 @@ function refresh() {
     const time = new Intl.DateTimeFormat("en-US", options).format();
     document.getElementById("time").innerHTML = time;
 }
+
+const CODING_CHALLENGE_RSSFEED = "https://codingchallenges.substack.com/feed";
+
+chrome.runtime.sendMessage({site: "codingchallenges", options: { 
+    url: CODING_CHALLENGE_RSSFEED
+  }}, function(res) {
+    console.log(res);
+  });

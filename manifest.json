@@ -8,8 +8,10 @@
     "chrome_url_overrides": {
         "newtab": "index.html"
       },    
-    "permissions": ["storage","activeTab","geolocation"]
-
-
-
+    "permissions": ["storage","activeTab","geolocation","tabs"],
+      "background": {
+        "service_worker": "fetchRSSFeed.js"
+      }
+     
+    
 }
